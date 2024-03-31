@@ -31,7 +31,7 @@
       }
 
       .header-subtitle {
-        color: #009E9E;
+        color: #009e9e;
         font-size: 18px;
         font-weight: 500;
         margin-bottom: 15px;
@@ -39,8 +39,52 @@
 
       .flex-container {
         display: flex;
-        background-color: #006a6a;
+        color: #f5f5f5;
         justify-content: space-around;
+      }
+
+      .col-1 {
+        width: 50%;
+        padding: 20px;
+        background-color: #006a6a;
+      }
+
+      .col1title {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+      .price {
+        font-weight: 700;
+        font-size: 26px;
+      }
+
+      .mounth {
+        font-size: 15px;
+        font-style: italic;
+        margin-left: 15px;
+      }
+
+      button {
+        margin-top: 20px;
+        width: 100%;
+        padding: 15px 32px;
+        color: #006a6a;
+        background-color: #cccccc;
+        font-size: 16px;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: #f5f5f5;
+      }
+
+      .col-2 {
+        background-color: #009e9e;
+        width: 50%;
         padding: 20px;
       }
     </style>
@@ -53,13 +97,21 @@
           Faça a sua assinatura agora e ganhe 30% de desconto!
         </div>
         <div>
-          Faça parte da nossa comunidade de desenvolvedores.
+          Faça parte da nossa comunidade de desenvolvedores. <br />
           Tenha suporte da nossa equipe e cresça mais rápido na sua carreira.
         </div>
       </div>
       <div class="flex-container">
-        <div>Coluna 1</div>
-        <div>Coluna2</div>
+        <div class="col-1">
+          <div class="col1title">Assinatura Mensal:</div>
+          <div>
+            <span class="price">R$99,99</span>
+            <span class="mounth"> por mês.</span>
+          </div>
+          <div>cancele a qualquer momento.</div>
+          <button>Assine Agora</button>
+        </div>
+        <div class="col-2"></div>
       </div>
     </div>
   </body>
